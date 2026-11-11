@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Tirages Résultats Live</title>
+<style>
+    :root { --fg: #14262b; --muted: #4f5d61; --bg: #f5f7f6; --card: #ffffff; --accent: #0f4c5c; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #e6eef0; --muted: #aabbbf; --bg: #0b1214; --card: #111b1d; --accent: #8fd3e3; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+    header { padding: 16px; background: linear-gradient(135deg, #0b3d4a, #9c3620); }
+    header a { color: #fff; font-weight: 700; text-decoration: none; }
+    main { max-width: 760px; margin: 24px auto; padding: 24px 16px; background: var(--card); border-radius: 16px; }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 32px; }
+    .meta { color: var(--muted); }
+    a { color: var(--accent); }
+    footer { max-width: 760px; margin: 0 auto 32px; padding: 0 16px; color: var(--muted); font-size: 14px; }
+    .contact { padding: 12px 16px; border-radius: 12px; background: var(--bg); }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid rgba(127, 127, 127, 0.25); }
+</style>
+</head>
+<body>
+<header><a href="#">Tirages Résultats Live</a></header>
+<main>
+<h1>Politique de confidentialité</h1>
+<p class="meta">En vigueur au 11 novembre 2026</p>
+<p>Tirages Résultats Live (« l'application », « nous ») affiche les résultats, l'historique et des statistiques des tirages Loto, EuroMillions – My Million, EuroDreams et Keno. Cette politique explique quelles données l'application utilise, pourquoi, sur quelle base légale, et quels sont vos droits au titre du Règlement général sur la protection des données (RGPD) et de la loi Informatique et Libertés. L'application est proposée en France uniquement et n'est pas éditée par La Française des Jeux.</p>
+
+<h2>Résumé</h2>
+<ul>
+  <li>Aucun compte, nom, e-mail ou numéro de téléphone n'est demandé. L'application utilise un identifiant anonyme.</li>
+  <li>Les statistiques d'utilisation et rapports d'erreur sont <strong>désactivés par défaut</strong> et ne sont envoyés qu'avec votre accord.</li>
+  <li>La version gratuite affiche des publicités Google AdMob. Votre consentement est recueilli avant toute publicité (Google User Messaging Platform, conforme au cadre IAB TCF) ; sur iOS, l'application vous demande en plus l'autorisation de suivi. Les abonnés VIP ne voient aucune publicité.</li>
+  <li>Vos grilles enregistrées et vos préférences restent sur votre appareil. Elles ne sont envoyées à notre serveur que si vous êtes abonné VIP, avez activé les notifications et enregistré des grilles, pour la vérification automatique après chaque tirage.</li>
+</ul>
+
+<h2>Responsable du traitement</h2>
+<p>Le responsable du traitement est l'éditeur de l'application (voir les <a href="terms_tirageslive.html#mentions">mentions légales</a>). Contact : voir la rubrique <a href="#contact">Contact</a> ci-dessous.</p>
+
+<h2>Données utilisées, finalités et bases légales</h2>
+<table>
+  <tr><th>Donnée</th><th>Finalité</th><th>Base légale (art. 6 RGPD)</th><th>Conservation</th></tr>
+  <tr><td>Identifiant anonyme (Firebase Authentication)</td><td>Lire les résultats sur nos serveurs, rattacher un abonnement VIP à votre appareil, protéger le service contre les abus</td><td>Exécution du service demandé (6.1.b) ; intérêt légitime de sécurité (6.1.f)</td><td>Tant que l'application est utilisée ; supprimé sur simple demande par e-mail</td></tr>
+  <tr><td>Jeton de notification (Firebase Cloud Messaging) et jeux choisis</td><td>Envoyer les résultats des jeux que vous avez choisis</td><td>Consentement (autorisation des notifications) (6.1.a)</td><td>Jusqu'à la désactivation des notifications</td></tr>
+  <tr><td>Abonnement VIP : transaction signée de l'App Store / Google Play, statut et date d'expiration</td><td>Vérifier l'achat, activer les fonctions VIP, gérer renouvellements, annulations et remboursements</td><td>Exécution du contrat (6.1.b) ; obligations comptables (6.1.c)</td><td>Durée de l'abonnement, puis jusqu'à 60 jours</td></tr>
+  <tr><td>Grilles enregistrées (numéros, options, code, NUMÉRO7) avec jeton et identifiant anonyme — VIP uniquement</td><td>Vérification automatique après chaque tirage et notification en cas de correspondance</td><td>Exécution du service VIP demandé (6.1.b)</td><td>Tant que la vérification automatique est active ; trace d'envoi d'une alerte : 30 jours</td></tr>
+  <tr><td>Statistiques d'utilisation (Firebase Analytics) et rapports d'erreur (Firebase Crashlytics)</td><td>Améliorer l'application et corriger les erreurs</td><td>Consentement (6.1.a), désactivé par défaut</td><td>Jusqu'à 14 mois (Analytics) / 90 jours (Crashlytics)</td></tr>
+  <tr><td>Données publicitaires (Google AdMob) : adresse IP, informations sur l'appareil et l'application, interactions avec les publicités, identifiant publicitaire (IDFA) uniquement si vous autorisez le suivi sur iOS</td><td>Afficher et mesurer des publicités, prévenir la fraude ; personnalisation uniquement avec votre consentement</td><td>Consentement recueilli par Google UMP (6.1.a) ; intérêt légitime pour la lutte contre la fraude (6.1.f)</td><td>Selon la politique de Google</td></tr>
+</table>
+
+<h2>Données conservées uniquement sur votre appareil</h2>
+<p>Vos grilles enregistrées (sauf vérification automatique VIP, voir ci-dessus), vos jeux favoris, le thème, le cache de l'historique des résultats et vos choix de confidentialité restent sur votre appareil. Les numéros saisis pour vérifier une grille ne sont pas envoyés.</p>
+
+<h2>Ce que nous ne collectons pas</h2>
+<p>Nous ne collectons ni localisation précise, ni contacts, ni photos, ni données de paiement (les paiements sont gérés par Apple ou Google). Sur Android, l'identifiant publicitaire n'est pas collecté. Firebase Analytics ne collecte aucun identifiant publicitaire.</p>
+
+<h2>Sous-traitants et transferts hors de l'Union européenne</h2>
+<p>Nous utilisons Google Firebase (Authentication, Installations, Cloud Firestore, Realtime Database, Cloud Functions, Cloud Messaging, Remote Config et, uniquement avec votre accord, Analytics et Crashlytics) et, pour les utilisateurs sans VIP, Google AdMob et Google User Messaging Platform. Nos bases de données sont hébergées dans l'Union européenne (Paris et Belgique). Certains traitements de Google peuvent avoir lieu hors de l'UE ; ils sont encadrés par le cadre de protection des données UE–États-Unis (Data Privacy Framework) et les clauses contractuelles types de la Commission européenne. Voir <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h2>Vos choix et vos droits</h2>
+<p>Vous pouvez à tout moment, dans Réglages › Confidentialité : désactiver les statistiques et rapports d'erreur, modifier vos choix publicitaires (« Choix de confidentialité publicitaire »), et sur iOS gérer le suivi dans Réglages iOS › Confidentialité et sécurité › Suivi. Vous pouvez désactiver les notifications dans Réglages › Notifications.</p>
+<p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, de portabilité, d'opposition et du droit de retirer votre consentement à tout moment (sans remettre en cause les traitements déjà effectués). L'identifiant anonyme ne nous permet pas de vous identifier : pour exercer vos droits (par exemple la suppression de vos données), écrivez-nous en indiquant l'« Identifiant anonyme » affiché dans Réglages › À propos. Désinstaller l'application supprime les données conservées sur l'appareil. Vous pouvez aussi introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
+
+<h2>Mineurs</h2>
+<p>Les jeux d'argent sont interdits aux mineurs. L'application ne s'adresse pas aux personnes de moins de 18 ans et ne collecte pas sciemment de données les concernant.</p>
+
+<h2>Modifications</h2>
+<p>Nous pouvons modifier cette politique ; la date d'entrée en vigueur indiquée en haut de la page sera alors mise à jour. Les changements importants seront signalés dans l'application.</p>
+
+<h2 id="contact">Contact et assistance</h2>
+<p class="contact">Pour toute question ou demande relative à vos données : <a href="mailto:shinhagun1@gmail.com">shinhagun1@gmail.com</a></p>
+</main>
+<footer>Tirages Résultats Live — application non officielle, sans lien avec La Française des Jeux. Seuls les résultats officiels font foi. <a href="terms_tirageslive.html">Conditions d'utilisation</a></footer>
+</body>
+</html>
