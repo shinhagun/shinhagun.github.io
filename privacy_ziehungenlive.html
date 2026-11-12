@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Ziehungen Zahlen Live</title>
+<style>
+    :root { --fg: #0a1440; --muted: #4a5578; --bg: #f2f6fb; --card: #ffffff; --accent: #005c98; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #e4ecf7; --muted: #a9b6cc; --bg: #070d26; --card: #0e1838; --accent: #b0d5fc; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+    header { padding: 16px; background: linear-gradient(135deg, #0a1440, #005c98); }
+    header a { color: #fff; font-weight: 700; text-decoration: none; }
+    main { max-width: 760px; margin: 24px auto; padding: 24px 16px; background: var(--card); border-radius: 16px; overflow-wrap: break-word; hyphens: auto; }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 32px; }
+    .meta { color: var(--muted); }
+    a { color: var(--accent); }
+    footer { max-width: 760px; margin: 0 auto 32px; padding: 0 16px; color: var(--muted); font-size: 14px; }
+    .contact { padding: 12px 16px; border-radius: 12px; background: var(--bg); }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid rgba(127, 127, 127, 0.25); }
+</style>
+</head>
+<body>
+<header><a href="#">Ziehungen Zahlen Live</a></header>
+<main>
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 12. November 2026</p>
+<p>Ziehungen Zahlen Live („die App“, „wir“) zeigt Gewinnzahlen, Quoten, Archiv und beschreibende Statistiken der Ziehungen von LOTTO 6aus49 (mit Superzahl), Spiel 77, Super 6, GlücksSpirale, Eurojackpot und KENO (mit plus 5). Diese Erklärung beschreibt, welche Daten die App verarbeitet, zu welchem Zweck, auf welcher Rechtsgrundlage und wie lange – nach der Datenschutz-Grundverordnung (DSGVO) und dem Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG). Die App richtet sich an Nutzer in Deutschland. Sie ist keine offizielle App und kein Angebot des DLTB oder einer Landeslotteriegesellschaft.</p>
+
+<h2>Kurz zusammengefasst</h2>
+<ul>
+  <li>Kein Konto, kein Name, keine E-Mail-Adresse, keine Telefonnummer: Die App nutzt nur eine anonyme Geräte-ID.</li>
+  <li>Nutzungsstatistik, Absturzberichte, das Laden der Online-Konfiguration und die Geräteprüfung (App Check) sind <strong>standardmäßig aus</strong> und starten erst nach deiner Einwilligung.</li>
+  <li>Die kostenlose Version zeigt Werbung von Google AdMob. Die Einwilligung dafür fragt Google ab, bevor Werbung angezeigt wird (Google User Messaging Platform, IAB TCF); auf dem iPhone fragt die App zusätzlich, ob Tracking erlaubt ist. VIP-Nutzer sehen keine Werbung.</li>
+  <li>Gespeicherte Spielscheine, Spielbudget und Einstellungen bleiben auf deinem Gerät. Nur bei der automatischen Prüfung (VIP) werden Spielscheine an unseren Server übertragen.</li>
+</ul>
+
+<h2>Verantwortlicher</h2>
+<p>Verantwortlich ist der im <a href="impressum_ziehungenlive.html">Impressum</a> genannte Anbieter. Kontakt: siehe <a href="#kontakt">Kontakt</a> unten.</p>
+
+<h2>Vertreter in der Europäischen Union (Art. 27 DSGVO)</h2>
+<p>Der Anbieter hat keine Niederlassung in der EU. Als Vertreter in der Union ist benannt: [[EU_VERTRETER]]. Du kannst dich mit allen Fragen zum Datenschutz auch an den Vertreter wenden.</p>
+
+<h2>Welche Daten wir verarbeiten</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Daten</th><th>Zweck</th><th>Rechtsgrundlage</th><th>Speicherdauer</th></tr>
+  <tr><td>Anonyme Geräte-ID (Firebase Authentication, Firebase Installations)</td><td>Ergebnisse, Quoten und Live-Daten aus Firebase laden (Firestore, Realtime Database); ein VIP-Abo deinem Gerät zuordnen</td><td>Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der App)</td><td>Bis zur Löschung auf Anfrage (unter Angabe der Geräte-ID); ein VIP-Abo wird dabei ebenfalls getrennt</td></tr>
+  <tr><td>App-Check-Prüf-Token (Firebase App Check; auf dem iPhone über App Attest bzw. DeviceCheck von Apple, auf Android über Play Integrity von Google)</td><td>Sicherstellen, dass nur echte Installationen dieser App unsere Server nutzen (Schutz vor Missbrauch und automatisiertem Abruf); keine Inhalte, Spielscheine oder Kontaktdaten</td><td>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG – standardmäßig aus; ohne Einwilligung findet keine Geräteprüfung statt</td><td>Token gilt kurzzeitig (Stunden) und wird nicht von uns gespeichert</td></tr>
+  <tr><td>Geräte-Token für Mitteilungen (Firebase Cloud Messaging) und die gewählten Spiele (als Themen abonniert)</td><td>Ergebnisse der gewählten Spiele zustellen</td><td>Art. 6 Abs. 1 lit. a DSGVO (Erlaubnis für Mitteilungen) bzw. lit. b</td><td>Bis du Mitteilungen abschaltest oder die App löschst</td></tr>
+  <tr><td>VIP-Abo: von Apple signierte Transaktion, Produkt, Status, Ablaufdatum, anonyme Geräte-ID</td><td>Kauf prüfen, VIP freischalten, Verlängerung, Kündigung und Erstattung verarbeiten</td><td>Art. 6 Abs. 1 lit. b DSGVO</td><td>Laufzeit des Abos, danach bis zu 60 Tage; Abrechnungsunterlagen führt Apple als Verkäufer</td></tr>
+  <tr><td>Gespeicherte Spielscheine (Zahlen, Losnummer, Spieltage) mit Geräte-Token und anonymer Geräte-ID – nur VIP mit automatischer Prüfung</td><td>Nach jeder Ziehung prüfen und bei einem Treffer benachrichtigen</td><td>Art. 6 Abs. 1 lit. b DSGVO (angeforderter VIP-Dienst)</td><td>Solange die automatische Prüfung aktiv ist; gelöscht, wenn VIP endet oder das Token ungültig wird. Vermerk über eine gesendete Treffer-Mitteilung: 30 Tage</td></tr>
+  <tr><td>Nutzungsstatistik (Firebase Analytics) und Absturzberichte (Firebase Crashlytics)</td><td>App verbessern und Fehler beheben</td><td>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG – standardmäßig aus</td><td>Bis zu 14 Monate (Analytics) bzw. 90 Tage (Crashlytics)</td></tr>
+  <tr><td>Online-Konfiguration (Firebase Remote Config, z. B. Werbung an/aus)</td><td>Einstellungen ohne App-Update ändern</td><td>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG – ohne Einwilligung nutzt die App die eingebauten Werte</td><td>Bis zum Widerruf</td></tr>
+  <tr><td>Werbedaten (Google AdMob, Google User Messaging Platform): IP-Adresse, Geräte- und App-Informationen, Interaktionen mit Werbung; Werbe-ID (IDFA) nur, wenn du auf dem iPhone Tracking erlaubst</td><td>Werbung ausspielen und messen, Betrug verhindern; personalisierte Werbung nur mit Einwilligung</td><td>Einwilligung über Google UMP / IAB TCF (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); berechtigtes Interesse an Betrugsabwehr (lit. f)</td><td>Nach den Bestimmungen von Google</td></tr>
+  <tr><td>Technische Zugriffsdaten (IP-Adresse, Zeitpunkt, angefragte Adresse) beim Abruf unserer Server, auch durch das Widget</td><td>Bereitstellung und Sicherheit der Server</td><td>Art. 6 Abs. 1 lit. f DSGVO</td><td>Server-Protokolle von Google Cloud, in der Regel 30 Tage</td></tr>
+</table>
+</div>
+
+<h2>Daten nur auf deinem Gerät</h2>
+<p>Gespeicherte Spielscheine (außer bei der automatischen Prüfung, siehe oben), Spielbudget, Lieblingsspiele, Darstellung, Erinnerungen an die Einlösefrist, der Zwischenspeicher des Ergebnisarchivs und deine Datenschutz-Auswahl bleiben auf deinem Gerät. Zahlen, die du zum Prüfen eingibst, werden nicht übertragen. Beim Löschen der App werden diese Daten entfernt.</p>
+
+<h2>Diese Webseite</h2>
+<p>Diese Seite wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch bedingt deine IP-Adresse und Angaben zum Browser in Server-Protokollen, um die Seite auszuliefern und vor Angriffen zu schützen (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übermittelt werden; GitHub ist nach dem EU-US Data Privacy Framework zertifiziert. Wir setzen auf dieser Seite keine Cookies und keine Analysewerkzeuge ein. Mehr dazu: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.</p>
+
+<h2>Widget</h2>
+<p>Das Widget auf dem Startbildschirm lädt nur öffentliche Ergebnisse und Ziehungstermine von unserem Server. Dabei werden keine persönlichen Daten, keine Geräte-ID und keine Spielscheine übertragen; technisch bedingt wird nur die IP-Adresse verarbeitet (siehe „Technische Zugriffsdaten“).</p>
+
+<h2>Was wir nicht erheben</h2>
+<p>Keinen genauen Standort, keine Kontakte, keine Fotos und keine Zahlungsdaten (Zahlungen wickelt Apple ab). Auf Android wird die Werbe-ID nicht erhoben. Firebase Analytics erhebt keine Werbe-ID.</p>
+
+<h2>Empfänger und Übermittlung in Drittländer</h2>
+<p>Wir nutzen Google Firebase (Authentication, Installations, Cloud Firestore, Realtime Database, Cloud Functions, Hosting, Cloud Messaging sowie – nur mit Einwilligung – App Check, Remote Config, Analytics und Crashlytics) und für Nutzer ohne VIP Google AdMob und Google User Messaging Platform. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Unsere Datenbanken und Server-Funktionen liegen in der EU (Frankfurt am Main und Belgien). Einzelne Verarbeitungen durch Google können außerhalb der EU, insbesondere in den USA, stattfinden; Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss der EU-Kommission, Art. 45 DSGVO), ergänzend gelten EU-Standardvertragsklauseln (Art. 46 DSGVO). Mehr dazu: <a href="https://policies.google.com/technologies/partner-sites?hl=de">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Käufe im App Store und die Geräteprüfung über App Attest / DeviceCheck laufen über Apple (Apple Distribution International Ltd., Hollyhill Industrial Estate, Cork, Irland); auch Apple kann Daten in den USA verarbeiten (EU-US Data Privacy Framework). Es gelten zusätzlich die Datenschutzbestimmungen von Apple.</p>
+<p>Wir verkaufen keine personenbezogenen Daten und geben sie nicht an Lotteriegesellschaften oder Annahmestellen weiter.</p>
+
+<h2>Deine Auswahl</h2>
+<p>In der App unter Einstellungen › Datenschutz kannst du Nutzungsstatistik, Absturzberichte, Online-Konfiguration und Geräteprüfung jederzeit ab- oder wieder einschalten und deine Auswahl für Werbung ändern. Auf dem iPhone verwaltest du Tracking unter iOS-Einstellungen › Datenschutz &amp; Sicherheit › Tracking. Mitteilungen schaltest du unter Einstellungen › Mitteilungen bzw. in den Systemeinstellungen ab.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO); die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt.</p>
+<p>Da wir dich nur über die anonyme Geräte-ID kennen, nenne für Anfragen bitte diese ID (Einstellungen › Über die App › Anonyme Geräte-ID). Mit dem Löschen der App entfernst du alle nur auf dem Gerät gespeicherten Daten.</p>
+<div class="contact" id="widerspruch"><strong>Widerspruchsrecht (Art. 21 DSGVO)</strong><br>Soweit wir Daten auf Grundlage berechtigter Interessen verarbeiten (Art. 6 Abs. 1 lit. f DSGVO – technische Zugriffsdaten, Betrugsabwehr bei Werbung), kannst du dieser Verarbeitung aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit widersprechen. Wir verarbeiten die Daten dann nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe nachweisen, die deine Interessen überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen. Eine formlose Nachricht an die unten genannte E-Mail-Adresse genügt.</div>
+<p>Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), insbesondere bei der Behörde deines Bundeslandes. Eine Übersicht der Aufsichtsbehörden findest du beim <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">Bundesbeauftragten für den Datenschutz und die Informationsfreiheit</a>.</p>
+
+<h2>Automatisierte Entscheidungen</h2>
+<p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO statt. Die automatische Spielschein-Prüfung vergleicht nur deine Zahlen mit den amtlichen Gewinnzahlen.</p>
+
+<h2>Minderjährige</h2>
+<p>Die Teilnahme an Glücksspielen ist erst ab 18 Jahren erlaubt. Die App richtet sich nicht an Minderjährige und erhebt wissentlich keine Daten von ihnen.</p>
+
+<h2>Änderungen</h2>
+<p>Wir passen diese Erklärung an, wenn sich die App oder die Rechtslage ändert. Es gilt die oben angegebene Fassung; wesentliche Änderungen kündigen wir in der App an.</p>
+
+<h2 id="kontakt">Kontakt</h2>
+<p class="contact">Fragen und Anfragen zu deinen Daten: <a href="mailto:[[EMAIL]]">[[EMAIL]]</a><br>Anschrift: siehe <a href="impressum_ziehungenlive.html">Impressum</a>.</p>
+</main>
+<footer>Ziehungen Zahlen Live — keine offizielle App. Kein Angebot des DLTB oder einer Landeslotteriegesellschaft. Alle Angaben ohne Gewähr. <a href="terms_ziehungenlive.html">Nutzungsbedingungen</a> · <a href="impressum_ziehungenlive.html">Impressum</a></footer>
+</body>
+</html>
