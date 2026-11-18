@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Sorteos Live</title>
+<style>
+    :root { --fg: #0b1f1a; --muted: #44564f; --bg: #f1f6f3; --card: #ffffff; --accent: #007034; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #e3efe9; --muted: #a7bbb2; --bg: #07130f; --card: #0f211b; --accent: #8fd9a8; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+    header { padding: 16px; background: linear-gradient(135deg, #003428, #007034); }
+    header a { color: #fff; font-weight: 700; text-decoration: none; }
+    main { max-width: 760px; margin: 24px auto; padding: 24px 16px; background: var(--card); border-radius: 16px; overflow-wrap: break-word; hyphens: auto; }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 32px; }
+    .meta { color: var(--muted); }
+    a { color: var(--accent); }
+    footer { max-width: 760px; margin: 0 auto 32px; padding: 0 16px; color: var(--muted); font-size: 14px; }
+    .note, .contact { padding: 12px 16px; border-radius: 12px; background: var(--bg); }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid rgba(127, 127, 127, 0.25); }
+</style>
+</head>
+<body>
+<header><a href="#">Sorteos Live</a></header>
+<main>
+<h1>Política de privacidad</h1>
+<p class="meta">Última actualización: 12 de noviembre de 2026</p>
+<p>Sorteos Live («la app», «nosotros») muestra resultados, premios, el archivo histórico y estadísticas descriptivas de sorteos celebrados en España (Lotería Nacional, incluidos los sorteos de Navidad y de El Niño, La Primitiva con Joker, Bonoloto, El Gordo de la Primitiva, EuroMillones con El Millón, EuroDreams, Eurojackpot y el cupón de la ONCE) y herramientas para comprobar tus propios décimos y boletos. Esta política explica qué datos trata la app, con qué finalidad, con qué base jurídica y durante cuánto tiempo, conforme al Reglamento General de Protección de Datos (RGPD) y a la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD). La app no es oficial y no tiene relación con SELAE (Loterías y Apuestas del Estado) ni con la ONCE.</p>
+
+<h2>Resumen</h2>
+<ul>
+  <li>Sin cuenta, sin nombre, sin correo electrónico y sin teléfono: la app solo usa un identificador anónimo del dispositivo.</li>
+  <li>Las estadísticas de uso, los informes de errores, la configuración en línea y la verificación del dispositivo (App Check) están <strong>desactivados por defecto</strong> y solo se activan si los aceptas en la pantalla de bienvenida o en Ajustes.</li>
+  <li>La versión gratuita muestra publicidad de Google AdMob. Google pide tu consentimiento antes de mostrarla (Google User Messaging Platform, IAB TCF) y, en el iPhone, la app pregunta además si permites el seguimiento. Con VIP no hay publicidad.</li>
+  <li>Tus jugadas guardadas, tu presupuesto y tus ajustes se quedan en tu dispositivo. Solo con la comprobación automática (VIP) se envían jugadas a nuestro servidor.</li>
+</ul>
+
+<h2>Responsable del tratamiento</h2>
+<p>El responsable es el titular indicado en el <a href="avisolegal_sorteoslive.html">Aviso legal</a>: DANG KHANH HA (desarrollador independiente, «shinhagun»), 36 Phạm Hùng, Nam Từ Liêm, Hà Nội, Vietnam. Correo electrónico: <a href="mailto:shinhagun1@gmail.com">shinhagun1@gmail.com</a>.</p>
+
+<h2>Representante en la Unión Europea (art. 27 RGPD)</h2>
+<p>El responsable no está establecido en la Unión Europea. Representante designado en la Unión: [[EU_REPRESENTANTE]]. También puedes dirigirte al representante para cualquier cuestión sobre protección de datos.</p>
+
+<h2>Qué datos tratamos</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Datos</th><th>Finalidad</th><th>Base jurídica</th><th>Plazo de conservación</th></tr>
+  <tr><td>Identificador anónimo del dispositivo (Firebase Authentication, Firebase Installations)</td><td>Cargar resultados, premios y datos en directo desde Firebase (Cloud Firestore, Realtime Database); asociar una suscripción VIP a tu dispositivo</td><td>Art. 6.1.b RGPD (prestación del servicio que solicitas)</td><td>Hasta su supresión a petición tuya (indicando el identificador); la suscripción VIP se desvincula también</td></tr>
+  <tr><td>Token de verificación de App Check (en iPhone mediante App Attest / DeviceCheck de Apple; en Android mediante Play Integrity de Google)</td><td>Comprobar que solo instalaciones auténticas de la app usan nuestros servidores (protección frente a abusos y descargas automatizadas); no incluye contenidos, jugadas ni datos de contacto</td><td>Consentimiento, art. 6.1.a RGPD y art. 22.2 LSSI-CE — desactivado por defecto; sin consentimiento no se verifica el dispositivo</td><td>El token es válido unas horas y no lo guardamos</td></tr>
+  <tr><td>Token de notificaciones (Firebase Cloud Messaging) y juegos elegidos (suscritos como temas)</td><td>Enviarte los resultados de los juegos que elijas</td><td>Art. 6.1.a RGPD (permiso de notificaciones) y art. 6.1.b</td><td>Hasta que desactives las notificaciones o borres la app</td></tr>
+  <tr><td>Suscripción VIP: transacción firmada por Apple, producto, estado, fecha de caducidad, identificador anónimo</td><td>Verificar la compra, activar VIP, tramitar renovaciones, cancelaciones y reembolsos</td><td>Art. 6.1.b RGPD</td><td>Mientras dure la suscripción y hasta 60 días después; la facturación la conserva Apple como vendedor</td></tr>
+  <tr><td>Jugadas guardadas (números, décimos, fechas de sorteo, partes de la peña sin nombres) con token de notificaciones e identificador anónimo — solo VIP con comprobación automática</td><td>Comprobarlas tras cada sorteo y avisarte si tienen premio</td><td>Art. 6.1.b RGPD (servicio VIP solicitado)</td><td>Mientras la comprobación automática esté activa; se borran al terminar VIP o cuando el token deja de ser válido. Registro de un aviso enviado: 30 días</td></tr>
+  <tr><td>Estadísticas de uso (Firebase Analytics) e informes de errores (Firebase Crashlytics)</td><td>Mejorar la app y corregir errores</td><td>Consentimiento, art. 6.1.a RGPD y art. 22.2 LSSI-CE — desactivado por defecto</td><td>Hasta 14 meses (Analytics) y 90 días (Crashlytics)</td></tr>
+  <tr><td>Configuración en línea (Firebase Remote Config, p. ej. activar o desactivar la publicidad)</td><td>Cambiar ajustes sin actualizar la app</td><td>Consentimiento, art. 6.1.a RGPD y art. 22.2 LSSI-CE — sin consentimiento la app usa los valores incluidos</td><td>Hasta que retires el consentimiento</td></tr>
+  <tr><td>Datos de publicidad (Google AdMob, Google User Messaging Platform): dirección IP, información del dispositivo y de la app, interacción con anuncios; identificador de publicidad (IDFA) solo si permites el seguimiento en el iPhone</td><td>Mostrar y medir anuncios y prevenir el fraude; publicidad personalizada solo con consentimiento</td><td>Consentimiento mediante Google UMP / IAB TCF (art. 6.1.a RGPD, art. 22.2 LSSI-CE); interés legítimo en la prevención del fraude (art. 6.1.f)</td><td>Según las condiciones de Google</td></tr>
+  <tr><td>Datos técnicos de acceso (dirección IP, fecha y hora, dirección solicitada) al consultar nuestros servidores, también desde el widget</td><td>Prestación y seguridad de los servidores</td><td>Art. 6.1.f RGPD (interés legítimo)</td><td>Registros de Google Cloud, normalmente 30 días</td></tr>
+</table>
+</div>
+
+<h2>Datos que solo están en tu dispositivo</h2>
+<p>Las jugadas guardadas (salvo con la comprobación automática, ver arriba), los nombres de los participantes de las peñas, Mi presupuesto, tus juegos favoritos, el aspecto de la app, los recordatorios del plazo para cobrar, la copia local del archivo de resultados y tu elección de privacidad se guardan en tu dispositivo. Los números que introduces para comprobar no se envían. Al borrar la app se eliminan estos datos.</p>
+
+<h2>Widget</h2>
+<p>El widget de la pantalla de inicio solo descarga resultados públicos y horarios de sorteos de nuestro servidor. No envía datos personales, identificador del dispositivo ni jugadas; por motivos técnicos solo se trata la dirección IP (ver «Datos técnicos de acceso»).</p>
+
+<h2>Esta página web</h2>
+<p>Esta página se publica en GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, EE. UU.). Al visitarla, GitHub trata tu dirección IP y datos del navegador en sus registros para servir la página y protegerla frente a ataques (art. 6.1.f RGPD). Pueden transferirse datos a EE. UU.; GitHub está certificada en el Marco de Privacidad de Datos UE-EE. UU. No usamos cookies ni herramientas de análisis en esta página. Más información: <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.</p>
+
+<h2>Qué no recogemos</h2>
+<p>No recogemos tu ubicación precisa, contactos, fotos ni datos de pago (los pagos los gestiona Apple). En Android no se recoge el identificador de publicidad. Firebase Analytics no recoge el identificador de publicidad.</p>
+
+<h2>Destinatarios y transferencias internacionales</h2>
+<p>Usamos Google Firebase (Authentication, Installations, Cloud Firestore, Realtime Database, Cloud Functions, Hosting, Cloud Messaging y, solo con consentimiento, App Check, Remote Config, Analytics y Crashlytics) y, para usuarios sin VIP, Google AdMob y Google User Messaging Platform. El proveedor es Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda, que actúa como encargado del tratamiento. Nuestras bases de datos y funciones de servidor están en la UE (Madrid y Bélgica). Algunos tratamientos de Google pueden realizarse fuera de la UE, en particular en EE. UU.; Google LLC está certificada en el Marco de Privacidad de Datos UE-EE. UU. (decisión de adecuación de la Comisión Europea, art. 45 RGPD) y se aplican además las cláusulas contractuales tipo de la UE (art. 46 RGPD). Más información: <a href="https://policies.google.com/technologies/partner-sites?hl=es">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Las compras en el App Store y la verificación mediante App Attest / DeviceCheck las gestiona Apple (Apple Distribution International Ltd., Hollyhill Industrial Estate, Cork, Irlanda); Apple también puede tratar datos en EE. UU. (Marco de Privacidad de Datos UE-EE. UU.). Se aplica además la política de privacidad de Apple.</p>
+<p>No vendemos datos personales ni los cedemos a operadores de loterías ni a puntos de venta.</p>
+
+<h2>Tus opciones</h2>
+<p>En la app, en Ajustes › Privacidad, puedes activar o desactivar en cualquier momento las estadísticas de uso, los informes de errores, la configuración en línea y la verificación del dispositivo, y cambiar tu elección sobre publicidad. En el iPhone, el seguimiento se gestiona en Ajustes de iOS › Privacidad y seguridad › Rastreo. Las notificaciones se desactivan en Ajustes › Notificaciones de la app o en los ajustes del sistema.</p>
+
+<h2>Tus derechos</h2>
+<p>Tienes derecho de acceso (art. 15 RGPD), rectificación (art. 16), supresión (art. 17), limitación del tratamiento (art. 18), portabilidad (art. 20) y oposición (art. 21). Puedes retirar tu consentimiento en cualquier momento (art. 7.3 RGPD), sin que ello afecte a la licitud del tratamiento anterior.</p>
+<p>Como solo te conocemos por el identificador anónimo, indícalo en tu solicitud (Ajustes › Acerca de la app › Identificador anónimo). Al borrar la app eliminas todos los datos guardados solo en el dispositivo.</p>
+<div class="contact"><strong>Derecho de oposición (art. 21 RGPD)</strong><br>Cuando tratamos datos por interés legítimo (art. 6.1.f RGPD: datos técnicos de acceso, prevención del fraude en publicidad), puedes oponerte en cualquier momento por motivos relacionados con tu situación particular. Dejaremos de tratarlos salvo que acreditemos motivos legítimos imperiosos que prevalezcan sobre tus intereses o que sean necesarios para formular, ejercer o defender reclamaciones. Basta con un mensaje al correo indicado abajo.</div>
+<p>Si consideras que el tratamiento no se ajusta a la normativa, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD), C/ Jorge Juan 6, 28001 Madrid, <a href="https://www.aepd.es/">www.aepd.es</a> (art. 77 RGPD), o ante la autoridad de control de tu lugar de residencia.</p>
+
+<h2>Decisiones automatizadas</h2>
+<p>No se toman decisiones automatizadas ni se elaboran perfiles en el sentido del art. 22 RGPD. La comprobación automática de jugadas solo compara tus números con los resultados oficiales.</p>
+
+<h2>Menores de edad</h2>
+<p>La participación en juegos de azar está prohibida a menores de 18 años. La app no está dirigida a menores y no recoge conscientemente datos suyos.</p>
+
+<h2>Cambios</h2>
+<p>Actualizaremos esta política si cambian la app o la normativa. Rige la versión indicada arriba; anunciaremos los cambios importantes en la app.</p>
+
+<h2 id="contacto">Contacto</h2>
+<p class="contact">Preguntas y solicitudes sobre tus datos: <a href="mailto:shinhagun1@gmail.com">shinhagun1@gmail.com</a><br>Dirección: ver <a href="avisolegal_sorteoslive.html">Aviso legal</a>.</p>
+</main>
+<footer>Sorteos Live — app no oficial. Sin relación con SELAE (Loterías y Apuestas del Estado) ni con la ONCE. Consulta siempre la lista oficial de premios. <a href="terms_sorteoslive.html">Términos de uso</a> · <a href="avisolegal_sorteoslive.html">Aviso legal</a></footer>
+</body>
+</html>
